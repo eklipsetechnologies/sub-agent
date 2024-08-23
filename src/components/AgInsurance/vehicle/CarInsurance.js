@@ -78,7 +78,7 @@ const CarInsurance = (props) => {
     if (localStorage.getItem('userToken')) {
       token = JSON.parse(localStorage.getItem('userToken'));
 
-      Axios.get(`${Home}agent/users`, {
+      Axios.get(`${Home}sub-agent/users`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -222,7 +222,7 @@ const CarInsurance = (props) => {
     if (localStorage.getItem('userToken')) {
       token = JSON.parse(localStorage.getItem('userToken'));
       setLoading(true);
-      Axios.post(`${Home}agent/policies/buy-vehicle-insurance-ag`, items, {
+      Axios.post(`${Home}sub-agent/policies/buy-vehicle-insurance-ag`, items, {
         headers: {
           Authorization: `Bearer ${token}`,
         },

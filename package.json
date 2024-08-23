@@ -1,7 +1,7 @@
 {
   "name": "omsnew",
   "version": "0.1.0",
-  "homepage": "https://test.agent.haba.insure/",
+  "homepage": "https://subagent.haba.insure",
   "private": true,
   "dependencies": {
     "@fullcalendar/core": "^5.5.1",

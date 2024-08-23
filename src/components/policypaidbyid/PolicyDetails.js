@@ -34,7 +34,7 @@ const PolicyDetails = (props) => {
 
   const LoadData = () => {
     setLoading(true);
-    Axios.get(`${Home}agent/policies/${id}/show`, {
+    Axios.get(`${Home}sub-agent/policies/${id}/show`, {
       headers: {
         Authorization: `Bearer ${token}`,
       },

@@ -44,7 +44,7 @@ const CoverListContainer = (props) => {
       status: status,
     };
 
-    Axios.get(`${Home}agent/policies`, {
+    Axios.get(`${Home}sub-agent/policies`, {
       params: searchParams,
       headers: {
         Authorization: `Bearer ${token}`,

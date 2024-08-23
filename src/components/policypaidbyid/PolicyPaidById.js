@@ -44,7 +44,7 @@ const PolicyPaidById = () => {
           (key) => params[key] == null && delete params[key]
         );
 
-        const res = await Axios.get(`${Home}agent/policies?page=${page}`, {
+        const res = await Axios.get(`${Home}sub-agent/policies?page=${page}`, {
           params: params,
           headers: {
             Authorization: `Bearer ${token}`,
@@ -116,7 +116,7 @@ const PolicyPaidById = () => {
 
       // Perform search based on query parameters
       setLoading(true);
-      Axios.get(`${Home}agent/policies`, {
+      Axios.get(`${Home}sub-agent/policies`, {
         params: searchParams,
         headers: {
           Authorization: `Bearer ${token}`,

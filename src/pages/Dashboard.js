@@ -57,7 +57,7 @@ class Dashboard extends Component {
     if (localStorage.getItem('userToken')) {
       token = JSON.parse(localStorage.getItem('userToken'));
       this.setState({ loading: true });
-      Axios.get(`${Home}agent/dashboard`, {
+      Axios.get(`${Home}sub-agent/dashboard`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },

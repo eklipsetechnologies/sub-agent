@@ -142,7 +142,7 @@ class AddUser extends Component {
       token = JSON.parse(localStorage.getItem('userToken'));
       this.setState({ loading: true });
       Axios.post(
-        `${Home}agent/users`,
+        `${Home}sub-agent/users`,
         {
           token: token,
           first_name: this.state.first_name,

@@ -29,7 +29,7 @@ const ListUsers = () => {
 
   const LoadData = (page = currentPage) => {
     setLoading(true);
-    Axios.get(`${Home}agent/users?should_paginate=${page}`, {
+    Axios.get(`${Home}sub-agent/users?should_paginate=${page}`, {
       params: {
         search: searchQuery,
       },
